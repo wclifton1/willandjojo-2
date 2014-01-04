@@ -566,13 +566,12 @@ header {
   z-index: 100;
 }
 header .brand {
-  font-size: 25px;
+  font-size: 48px;
   font-weight: normal;
   color: #34495e;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 800;
-  letter-spacing: -1px;
-  color: #2c3e50;
+  font-family: "Leckerli One", cursive;
+  
+  color: #655D6B;
 }
 header .brand img:first-child {
   float: left;
@@ -1431,7 +1430,7 @@ body > section {
   border-bottom: 2px solid #EBEDEE;
 }
 .header-13-sub .background {
-  background-image: url("../img/bg-big.jpg");
+  background-image: url("../img/bg-big-crop.jpg");
   opacity: 0.9;
   filter: alpha(opacity=90);
 }

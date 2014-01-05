@@ -328,6 +328,18 @@ footer {
 .bg-info {
   background-color: #3498db;
 }
+.bg-pom {
+  background-color: #F27680;
+}
+.bg-eggplant {
+  background-color: #655D6B;
+}
+.bg-butternut {
+  background-color: #FDDFB4;
+}
+.bg-ash {
+  background-color: #bbb4bc;
+}
 .bordered {
   border-style: solid;
 }
@@ -566,13 +578,10 @@ header {
   z-index: 100;
 }
 header .brand {
-  font-size: 25px;
+  font-size: 48px;
   font-weight: normal;
-  color: #34495e;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 800;
-  letter-spacing: -1px;
-  color: #2c3e50;
+  font-family: "Leckerli One", cursive;
+  color: #FDDFB4;
 }
 header .brand img:first-child {
   float: left;
@@ -655,11 +664,6 @@ section * {
 }
 .header-1 .brand {
   padding-left: 0;
-  font-size: 25px;
-  font-weight: normal;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 800;
-  color: #ffffff;
 }
 .header-1 .brand:hover,
 .header-1 .brand:focus,
@@ -1277,9 +1281,9 @@ section * {
   padding-bottom: 80px;
 }
 .header-1-sub .pt-page-1 .background {
-  background-image: url('../img/NY_002.png');
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  background-image: url('../img/bg-big-crop-web.jpg');
+  opacity: 0.9;
+  filter: alpha(opacity=90);
   background-position: 50% 30%;
 }
 .header-1-sub .pt-page-2 .background {
@@ -1293,4 +1297,9 @@ section * {
   opacity: 0.5;
   filter: alpha(opacity=50);
   background-position: 50% 30%;
+}
+
+/* line 40, ../sass/_type.sass */
+ .leckerli {
+     font-family: "Leckerli One", cursive;
 }

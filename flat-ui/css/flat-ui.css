@@ -727,11 +727,9 @@ h6 {
 }
 .navbar .brand {
   border-radius: 6px 0 0 6px;
-  color: #526476;
-  font-size: 23.996px;
+
   /* 24px */
 
-  font-weight: 700;
   margin-left: 0;
   padding: 23px 28px 24px 32px;
   text-shadow: none;

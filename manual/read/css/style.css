@@ -329,6 +329,18 @@ footer {
 .bg-info {
   background-color: #3498db;
 }
+.bg-pom {
+  background-color: #F27680;
+}
+.bg-eggplant {
+  background-color: #655D6B;
+}
+.bg-butternut {
+  background-color: #FDDFB4;
+}
+.bg-ash {
+  background-color: #bbb4bc;
+}
 .bordered {
   border-style: solid;
 }

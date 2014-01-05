@@ -1721,7 +1721,7 @@ font-family: 'Muli', sans-serif;
 @media (max-width: 767px) {
   .contacts-5 .map {
     height: 480px;
-    margin-bottom: 80px;
+    margin-bottom: -20px;
     margin-right: -20px;
     margin-left: -20px;
   }

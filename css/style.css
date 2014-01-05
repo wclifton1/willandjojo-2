@@ -489,15 +489,8 @@ button:active {
   }
   .navbar .nav-collapse .nav > li > a {
     display: block!important;
-    margin: 0;
-    padding: 12px 35px;
     border-bottom: 2px solid #24292d;
-    font-size: 13px;
-    font-weight: normal;
     font-family: 'Muli', sans-serif;
-    letter-spacing: 1px;
-    color: #5b5e61;
-    text-transform: uppercase;
   }
   .navbar .nav-collapse .nav > li > a:hover,
   .navbar .nav-collapse .nav > li > a:focus,
@@ -664,6 +657,10 @@ section * {
 }
 .header-1 .brand {
   padding-left: 0;
+    font-size: 36px;
+  font-weight: normal;
+  font-family: "Leckerli One", cursive;
+  color: #FDDFB4;
 }
 .header-1 .brand:hover,
 .header-1 .brand:focus,
@@ -705,11 +702,6 @@ section * {
   margin-left: 0;
 }
 .header-1 .navbar .nav > li > a {
-  padding: 31px 0 27px;
-  font-size: 13px;
-  font-weight: normal;
-  font-weight: 500;
-  letter-spacing: 2px;
   color: #ffffff;
 }
 .header-1 .navbar .nav > li > a:hover,
@@ -771,18 +763,7 @@ section * {
   .header-1 .navbar .nav-collapse .nav > li {
     margin: 0;
   }
-  .header-1 .navbar .nav-collapse .nav > li > a {
-    display: block!important;
-    margin: 0;
-    padding: 12px 35px;
-    border-bottom: 2px solid #24292d;
-    font-size: 13px;
-    font-weight: normal;
-    font-family: 'Muli', sans-serif;
-    letter-spacing: 1px;
-    color: #5b5e61;
-    text-transform: uppercase;
-  }
+  
   .header-1 .navbar .nav-collapse .nav > li > a:hover,
   .header-1 .navbar .nav-collapse .nav > li > a:focus,
   .header-1 .navbar .nav-collapse .nav > li > a.active {

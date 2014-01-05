@@ -409,12 +409,12 @@ startupKit.uiKitHeader.header17 = function() {
 
 /* Header 18*/
 startupKit.uiKitHeader.header18 = function() {
-
+/* fixed height
     $(window).resize(function() {
         maxH = $(window).height(); 
         $('.header-18 .page-transitions').css('height', maxH + 'px');
     });
-
+*/
     // PageTransitions
     var pt = PageTransitions();
     pt.init('#h-18-pt-main');

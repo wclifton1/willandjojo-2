@@ -31,34 +31,53 @@ function fadedEls(el, shift) {
     });
 }
 
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+    window.mobile = true;
+} else {
+    window.mobile = false;
+}
+
 (function($) {
     $(function() {
-
+       
         // Focus state for append/prepend inputs
         $('.input-prepend, .input-append').on('focus', 'input', function() {
             $(this).closest('.control-group, form').addClass('focus');
         }).on('blur', 'input', function() {
             $(this).closest('.control-group, form').removeClass('focus');
         });
+ 
+       
+
+        // features ani
+        fadedEls($('.features').parent().find('h3'), 'h');
+        $('.features > *').each(function() {
+            fadedEls($(this), 150);
+        });     
         
 
-        // Parallax
-        $('.header-13-sub .background').parallax('50%', -0.3, true);
-        $('.content-23.first').parallax('50%', 0.3, true);
+        // responsive
+        $(window).resize(function() {
+            // input-append auto width
+            $('footer .input-append input[type="text"]').each(function() {
+                var controlGroup = $(this).closest('.control-group');
 
-        // Faded elements
-        $('.features [class*="box-"], .content-9 .span5 img').each(function() {
-            fadedEls($(this), 'h');
+                if ($(window).width() > 480) {
+                    $(this).css('width', '');
+                } else {
+                    $(this).css('width', controlGroup.outerWidth() - controlGroup.find('.input-append .btn').outerWidth());
+                }
+            });
+
+            // social-btns
+            if ($(window).width() > 480) {
+                $('footer .social-btns.mobile-processed').removeClass('mobile-processed').appendTo('footer > .container > .row > .span3:last');
+            } else {
+                $('footer .social-btns:not(.mobile-processed)').addClass('mobile-processed').insertBefore('footer nav');
+            }
         });
-      
 
         $(window).resize().scroll();
 
-    });
-
-    $(window).load(function() {
-        $('html').addClass('loaded');
-        $(window).resize().scroll();
     });
 })(jQuery);
-

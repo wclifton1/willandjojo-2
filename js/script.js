@@ -58,10 +58,10 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
         //will
         
         //$("#nav ul li a[href^='#']").on('click', function(e) {
-            $("a[href^='#']").on('click', function(e) {
+            $('a[href*=#]:not([href=#])').on('click', function(e) {
 
             // prevent default anchor click behavior
-            //e.preventDefault();
+            e.preventDefault();
             
             // store hash
             var hash = this.hash;
@@ -80,7 +80,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
         
          // Parallax
         $('.content-23.first').parallax('50%', 0.3, true);
-        $('.header-1-sub .background').parallax('50%', -0.3, true);
+        //$('.header-1-sub .background').parallax('50%', -0.3, true);
 
         
         // responsive

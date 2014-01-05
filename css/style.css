@@ -991,9 +991,9 @@ font-family: 'Muli', sans-serif;
   background-position: 50% 30%;
 }
 .header-1-sub .pt-page-2 .background {
-  background-image: url('../img/img-2.jpg');
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  background-image: url('../img/willjojo-29.jpg');
+  opacity: 0.9;
+  filter: alpha(opacity=90);
   background-position: 50% 30%;
 }
 .header-1-sub .pt-page-3 .background {
@@ -1002,6 +1002,7 @@ font-family: 'Muli', sans-serif;
   filter: alpha(opacity=50);
   background-position: 50% 30%;
 }
+
 
 .content-26 {
   position: relative;

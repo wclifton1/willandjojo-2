@@ -710,7 +710,7 @@ section * {
   color: rgba(0, 0, 0, 0.4);
 }
 .header-1 .navbar .nav > li.active > a {
-  color: rgba(0, 0, 0, 0.4);
+  color: #F27680;
 }
 .header-1 .navbar .nav > li.active > a:hover,
 .header-1 .navbar .nav > li.active > a:focus,
@@ -990,6 +990,68 @@ font-family: 'Muli', sans-serif;
   filter: alpha(opacity=50);
   background-position: 50% 30%;
 }
+
+.header-18 .s2 .background {
+  background-image: url('../img/info-2.png');
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  background-position: 50% 30%;
+    background-size:contain
+}
+.header-18 .s3 .background {
+  background-image: url('http://farm9.staticflickr.com/8449/7958354666_38deb51dec_h.jpg');
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  background-position: 50% 30%;
+}
+.header-18 .s4 .background {
+  background-image: url('../img/info-3.png');
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  background-position: 50% 30%;
+    background-size:contain
+}
+.header-18 .s5 .background {
+  background-image: url('http://farm9.staticflickr.com/8542/8712503823_496475520d_h.jpg');
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  background-position: 50% 30%;
+}
+.header-18 .s6 .background {
+  background-image: url('../img/info-4.png');
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  background-position: 50% 30%;
+    background-size:contain
+}
+.header-18 .s7 .background {
+  background-image: url('http://farm4.staticflickr.com/3732/10684038494_dec7510c7f_h.jpg');
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  background-position: 50% 30%;
+}
+.header-18 .s8 .background {
+  background-image: url('http://farm8.staticflickr.com/7289/11431982603_390b24cbd6_h.jpg');
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  background-position: 50% 30%;
+}
+.header-18 .s9 .background {
+  background-image: url('http://farm8.staticflickr.com/7408/10684176063_d0c1faaab1_h.jpg');
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  background-position: 50% 30%;
+}
+.header-18 .s10 .background {
+  background-image: url('http://farm8.staticflickr.com/7350/10683937255_ab18293585_h.jpg');
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  background-position: 50% 30%;
+}
+
+
+
+
 
 
 .content-26 {

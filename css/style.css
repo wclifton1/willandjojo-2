@@ -971,6 +971,13 @@ font-family: 'Muli', sans-serif;
   filter: alpha(opacity=90);
   background-position: 50% 30%;
 }
+
+.content-23 .background {
+  background-image: url('../img/map.png');
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  background-position: 50% 30%;
+}
 .header-1-sub .pt-page-2 .background {
   background-image: url('../img/willjojo-29.jpg');
   opacity: 0.9;
@@ -1404,7 +1411,15 @@ font-family: 'Muli', sans-serif;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: white;
+}
+.content-23-2 {
+  position: relative;
+  height: 600px;
+     background: url("../img/map.png") no-repeat fixed 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .content-23.v-center,
 .content-23 .v-center {
@@ -1532,7 +1547,7 @@ font-family: 'Muli', sans-serif;
   }
 }
 .content-23.first {
-  background: url("../img/willjojo-29.jpg") no-repeat fixed 50% 50% #1b1f23;
+  background: url("../img/willjojo-29.jpg") no-repeat fixed 50% 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1824,3 +1839,4 @@ font-family: 'Muli', sans-serif;
         display:none;
     }
 }
+

@@ -1399,7 +1399,7 @@ font-family: 'Muli', sans-serif;
 
 .content-23 {
   position: relative;
-  height: 800px;
+  height: 600px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1539,6 +1539,13 @@ font-family: 'Muli', sans-serif;
   background-size: cover;
 }
 
+.content-23.second {
+  background: url("../img/map.png") no-repeat fixed 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .content-30 {
   position: relative;
   padding-top: 110px;
@@ -1698,7 +1705,7 @@ font-family: 'Muli', sans-serif;
   color: #15967d;
 }
 .contacts-5 .map {
-  height: 550px;
+  height: 800px;
 }
 @media (max-width: 767px) {
   .contacts-5 .map {

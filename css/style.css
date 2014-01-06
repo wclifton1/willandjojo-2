@@ -1794,3 +1794,33 @@ font-family: 'Muli', sans-serif;
  .leckerli {
      font-family: "Leckerli One", cursive;
 }
+
+
+.embed-container-big{
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    display:none;
+}
+
+@media (min-width: 700px) {
+    .embed-container-big{
+        display:inherit;
+    }
+}
+
+.embed-container-small{
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    display:inherit;
+
+}
+
+@media (min-width: 700px) {
+.embed-container-small{
+        display:none;
+    }
+}

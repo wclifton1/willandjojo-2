@@ -18837,3 +18837,10 @@ section[class*=content-] {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+}

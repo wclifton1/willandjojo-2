@@ -1034,7 +1034,7 @@ font-family: 'Muli', sans-serif;
  * Header 18 stylesheet  
  * */
 .header-18 {
-  height: 550px;
+  height: 100%;
 }
 .header-18 .pt-controls {
   display: table;
@@ -1335,9 +1335,6 @@ font-family: 'Muli', sans-serif;
 .header-18 .header-18-sub .header-18-section .img {
   display: inline-block;
   position: relative;
-}
-.header-18 .header-18-sub .header-18-section .img img:first-child {
-  visibility: hidden;
 }
 .header-18 .header-18-sub .header-18-section .img img {
   -webkit-backface-visibility: hidden;
@@ -1810,6 +1807,26 @@ font-family: 'Muli', sans-serif;
      font-family: "Leckerli One", cursive;
 }
 
+leckerli {
+     font-family: "Leckerli One", cursive;
+}
+
+pom {
+color: #F27680;
+}
+eggplant {
+  color: #655D6B;
+}
+butternut {
+  color: #FDDFB4;
+}
+ash {
+  color: #bbb4bc;
+}
+white {
+  color: #ffffff;
+}
+
 
 .embed-container-big{
     position: relative;
@@ -1840,3 +1857,6 @@ font-family: 'Muli', sans-serif;
     }
 }
 
+.img-responsive {
+    margin: 0 auto;
+}

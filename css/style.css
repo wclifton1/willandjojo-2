@@ -1922,3 +1922,14 @@ white {
 .img-responsive {
     margin: 0 auto;
 }
+
+.btn {
+background: #655D6B;
+  color: #ffffff;
+}
+
+.btn:hover,
+.btn:focus,
+.btn-group:focus .btn.dropdown-toggle {
+  background-color: #F27680;
+  color: #ffffff;

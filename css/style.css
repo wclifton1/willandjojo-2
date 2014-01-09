@@ -1930,6 +1930,20 @@ background: #655D6B;
   color: #ffffff;
 }
 
+.content-23 .btn {
+background: #F27680;
+  color: #ffffff;
+}
+
+.content-30 .btn {
+    background: #FDDFB4;
+    color: #655D6B;
+    padding: 0px 3px 2px 3px;
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    line-height: 1.722;
+}
+
 .btn:hover,
 .btn:focus,
 .btn-group:focus .btn.dropdown-toggle {

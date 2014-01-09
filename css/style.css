@@ -1935,3 +1935,11 @@ background: #655D6B;
 .btn-group:focus .btn.dropdown-toggle {
   background-color: #F27680;
   color: #ffffff;
+}
+
+.btn-sm {
+padding: 5px 10px;
+font-size: 12px;
+line-height: 1.5;
+border-radius: 3px;
+}

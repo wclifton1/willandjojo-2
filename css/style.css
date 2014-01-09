@@ -1993,3 +1993,9 @@ font-family: 'Cedarville Cursive', cursive;
 .f6{
 font-family: 'Dawning of a New Day', cursive;   
 }
+
+f7{
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    font-weight:200;
+}

@@ -138,6 +138,7 @@ small {
   /* 31px */
 
 }
+/**
 blockquote {
   position: relative;
   border-left: none;
@@ -171,6 +172,7 @@ blockquote:before {
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
+*/
 .img-rounded {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;

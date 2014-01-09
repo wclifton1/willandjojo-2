@@ -1074,7 +1074,6 @@ section * {
     font-size: 35px;
     font-weight: normal;
     color: #2c3e50;
-    font-family: 'Muli', sans-serif;
     font-weight: 300;
     margin: 0 0 36px;
 }
@@ -1969,4 +1968,28 @@ div#line1 span#b {
 }
 div#line1:hover span#b {
     display:inline;
+}
+
+.f1{
+ font-family: 'Parisienne', cursive;
+}
+
+.f2{
+font-family: 'Arizonia', cursive;
+}
+
+.f3{
+font-family: 'Italianno', cursive; 
+}
+
+.f4{
+font-family: 'Meddon', cursive;   
+}
+
+.f5{
+font-family: 'Cedarville Cursive', cursive;  
+}
+
+.f6{
+font-family: 'Dawning of a New Day', cursive;   
 }

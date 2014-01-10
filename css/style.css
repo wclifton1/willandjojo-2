@@ -138,7 +138,7 @@ small {
     /* 31px */
     
 }
-/**
+
 blockquote {
 position: relative;
 border-left: none;
@@ -172,7 +172,7 @@ content: "";
 -moz-border-radius: 2px;
 border-radius: 2px;
 }
-*/
+
 .img-rounded {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -1971,31 +1971,42 @@ div#line1:hover span#b {
 }
 
 .f1{
- font-family: 'Parisienne', cursive;
+    font-family: 'Parisienne', cursive;
 }
 
 .f2{
-font-family: 'Arizonia', cursive;
+    font-family: 'Arizonia', cursive;
 }
 
 .f3{
-font-family: 'Italianno', cursive; 
+    font-family: 'Italianno', cursive; 
 }
 
 .f4{
-font-family: 'Meddon', cursive;   
+    font-family: 'Meddon', cursive;   
 }
 
 .f5{
-font-family: 'Cedarville Cursive', cursive;  
+    font-family: 'Cedarville Cursive', cursive;  
 }
 
 .f6{
-font-family: 'Dawning of a New Day', cursive;   
+    font-family: 'Dawning of a New Day', cursive;   
 }
 
 f7{
     font-family: 'Cardo', serif;
     font-style: italic;
     font-weight:200;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    #hide-sm {
+        display: none;
+    }
 }

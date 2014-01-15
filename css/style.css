@@ -140,37 +140,37 @@ small {
 }
 
 blockquote {
-position: relative;
-border-left: none;
-padding-left: 19px;
+    position: relative;
+    border-left: none;
+    padding-left: 19px;
 }
 blockquote p {
-font-size: 20.006px;
-line-height: 1.549829;
-font-weight: normal;
-margin-bottom: .4em;
+    font-size: 20.006px;
+    line-height: 1.549829;
+    font-weight: normal;
+    margin-bottom: .4em;
 }
 blockquote small {
-font-size: 18.004px;
-line-height: 1.722169;
-font-style: italic;
-color: #34495e;
+    font-size: 18.004px;
+    line-height: 1.722169;
+    font-style: italic;
+    color: #34495e;
 }
 blockquote small:before {
-content: "";
+    content: "";
 }
 blockquote:before {
-position: absolute;
-left: 0;
-width: 3px;
-height: 100%;
-top: 0;
-bottom: 0;
-background-color: #ebedee;
-content: "";
--webkit-border-radius: 2px;
--moz-border-radius: 2px;
-border-radius: 2px;
+    position: absolute;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: #ebedee;
+    content: "";
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
 }
 
 .img-rounded {
@@ -333,14 +333,26 @@ footer {
 .bg-pom {
     background-color: #F27680;
 }
+pom {
+    color: #F27680;
+}
 .bg-eggplant {
     background-color: #655D6B;
+}
+eggplant {
+    color: #655D6B;
 }
 .bg-butternut {
     background-color: #FDDFB4;
 }
+butternut {
+    color: #FDDFB4;
+}
 .bg-ash {
     background-color: #bbb4bc;
+}
+ash {
+    color: #bbb4bc;
 }
 .bordered {
     border-style: solid;
@@ -1038,12 +1050,7 @@ section * {
     filter: alpha(opacity=100);
     background-position: 40% 60%;
 }
-.header-18 .s10 .background {
-    background-image: url('http://farm8.staticflickr.com/7350/10683937255_ab18293585_h.jpg');
-    opacity: 1.0;
-    filter: alpha(opacity=100);
-    background-position: 40% 60%;
-}
+
 .header-18 .s11 .background {
     background-image: url('../img/info-4.png');
     opacity: 1.0;
@@ -1973,36 +1980,6 @@ div#line1:hover span#b {
     display:inline;
 }
 
-.f1{
-    font-family: 'Parisienne', cursive;
-}
-
-.f2{
-    font-family: 'Arizonia', cursive;
-}
-
-.f3{
-    font-family: 'Italianno', cursive; 
-}
-
-.f4{
-    font-family: 'Meddon', cursive;   
-}
-
-.f5{
-    font-family: 'Cedarville Cursive', cursive;  
-}
-
-.f6{
-    font-family: 'Dawning of a New Day', cursive;   
-}
-
-f7{
-    font-family: 'Cardo', serif;
-    font-style: italic;
-    font-weight:200;
-}
-
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -2015,26 +1992,33 @@ html, body {
 }
 
 .block {
-  text-align: center;
-  margin: 20px;
+    text-align: center;
+    margin: 20px;
 }
- 
+
 .block:before {
-  content: '';
-  display: inline-block;
-  height: 100%; 
-  vertical-align: middle;
-  margin-right: -0.25em; /* Adjusts for spacing */
+    content: '';
+    display: inline-block;
+    height: 100%; 
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
     
-  /* For visualization 
-  background: #808080; width: 5px;
-  */
- }
- 
+    /* For visualization 
+    background: #808080; width: 5px;
+    */
+}
+
 .centered {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 10px 15px;
-  border: #a0a0a0 solid 1px;
-  background: #f5f5f5;
- }
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 15px;
+    border: #a0a0a0 solid 1px;
+    background: #f5f5f5;
+}
+
+.intro h1,h2,h3{
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color:#655D6B;
+}

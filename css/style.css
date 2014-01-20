@@ -329,6 +329,7 @@ footer {
 }
 .bg-pom {
     background-color: #F27680;
+    color:white;
 }
 pom {
     color: #F27680;
@@ -1933,11 +1934,6 @@ white {
 
 .btn {
     background: #655D6B;
-    color: #ffffff;
-}
-
-.content-23 .btn {
-    background: #F27680;
     color: #ffffff;
 }
 

@@ -1643,13 +1643,13 @@ section * {
 }
 .content-30 {
     position: relative;
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 @media (max-width: 480px) {
     .content-30 {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 .content-30 .features > * {
@@ -1821,8 +1821,8 @@ section * {
 * Footer 12 stylesheet  
 * */
 .footer-12 {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-top: 2px solid #ebedee;
     text-align: center;
     font-size: 84.3px;
@@ -1958,6 +1958,13 @@ white {
     line-height: 1.722;
 }
 
+.content-30 h4{
+    color: #655D6B;
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    line-height: 1.722;
+}
+
 .btn:hover,
 .btn:focus,
 .btn-group:focus .btn.dropdown-toggle {
@@ -2020,7 +2027,7 @@ html, body {
     border: #a0a0a0 solid 1px;
     background: #f5f5f5;
 }
-
+/*
 .intro h1,h2,h3{
     font-family: "futura-pt",sans-serif;
     font-size:3em;
@@ -2028,6 +2035,7 @@ html, body {
     font-weight: 700;
     color:#655D6B;
 }
+*/
 
 .pink-box {
     border:2px solid;
@@ -2052,3 +2060,13 @@ border-radius: 30px;
      make sure you have an empty gif */
   background-image: url('empty.gif');
 }   
+
+.nav-tabs > li > a {
+ font-size:1.5em;   
+}
+
+@media (max-width: 979px) {
+    .nav-tabs > li > a {
+        font-size:1em;
+    }
+}

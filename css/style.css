@@ -41,7 +41,7 @@ textarea {
     font-size: 14px;
 }
 a {
-    color: #16a085;
+    color: #655D6B;
     text-decoration: none;
     -webkit-backface-visibility: hidden;
     -webkit-transition: 0.25s;
@@ -50,9 +50,21 @@ a {
     transition: 0.25s;
 }
 a:hover {
-    color: #1abc9c;
+    color: #F27680;
     text-decoration: none;
 }
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+    color: #F27680;
+    border-left: 1px solid #655D6B;
+    border-top: 1px solid #655D6B;
+    border-right: 1px solid #655D6B;
+}
+
+.nav-tabs {
+border-bottom: 1px solid #655D6B;
+}
+
 h1,
 .h1 {
     font-size: 62.006px /* 64px */;

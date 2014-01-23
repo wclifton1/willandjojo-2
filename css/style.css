@@ -329,7 +329,6 @@ footer {
 }
 .bg-pom {
     background-color: #F27680;
-    color:white;
 }
 pom {
     color: #F27680;
@@ -985,7 +984,7 @@ section * {
 }
 
 .content-23 .background {
-    background-image: url('../img/htx.jpg');
+    background-image: url('../img/map.png');
     opacity: 0.9;
     filter: alpha(opacity=90);
     background-position: 50% 30%;
@@ -1934,6 +1933,11 @@ white {
 
 .btn {
     background: #655D6B;
+    color: #ffffff;
+}
+
+.content-23 .btn {
+    background: #F27680;
     color: #ffffff;
 }
 

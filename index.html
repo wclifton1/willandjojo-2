@@ -24,8 +24,8 @@
         <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
         
-         <style>
-
+        <style>
+            
             /* Demo styles */
             html,body{background:#222;margin:0;}
             body{border-top:4px solid #000;}
@@ -34,31 +34,31 @@
             p{margin:0 0 20px}
             a {color:#22BCB9;text-decoration:none;}
             .cred{margin-top:20px;font-size:11px;}
-
+            
             /* This rule is read by Galleria to define the gallery height: */
             #galleria{height:320px;}
-
+            
         </style>
-
+        
         <!-- load jQuery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-
+        
         <!-- load Galleria -->
         <script src="js/galleria-1.3.5.min.js"></script>
-
+        
         <!-- load flickr plugin -->
         <script src="js/galleria.flickr.js"></script>
         
         <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-47436307-1', 'willandjojo.com');
-  ga('send', 'pageview');
-
-</script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            
+            ga('create', 'UA-47436307-1', 'willandjojo.com');
+            ga('send', 'pageview');
+            
+        </script>
         
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
@@ -102,7 +102,7 @@
         
         <section class="content-26">
             <div class="container">
-               
+                
                 <div class="row features">
                     <div class="span3">
                         <a href="#faq"><img src="img/icon-2.png" alt="" width="256" height="256"></a>
@@ -237,6 +237,35 @@
             </div>
         </div>
         
+        <div class="content">
+            <h1>Galleria Flickr Plugin Demo</h1>
+            <p>Demonstrating a basic gallery example with a Flickr search.</p>
+            
+            <!-- Adding gallery images. This is just a container for the dynamic flickr images -->
+            
+            <div id="galleria"></div>
+            
+            <p class="cred">Made by <a href="http://galleria.aino.se">Galleria</a>.</p>
+            <a href="#" id="close">cloase</a>
+        </div>
+        <script>
+            
+            // Load the classic theme
+            Galleria.loadTheme('../../themes/classic/galleria.classic.min.js');
+            
+            // Initialize Galleria
+            Galleria.run('#galleria', {
+                
+                // search flickr for "galleria"
+                flickr: 'search:galleria',
+                
+                flickrOptions: {
+                    // sort by interestingness
+                    sort: 'interestingness-desc'
+                }
+            });
+        </script>
+        
         <!-- content-30 -->
         <section id="wedding" class="content-30">
             <div class="container">
@@ -301,7 +330,7 @@
                             <a href="#houston"><div class="img">
                                 <img src="img/menil-bw.jpg" width="220" height"220" alt="">
                                 <img src="img/menil.jpg" width="220" height"220" alt="">
-                            </div></a>
+                                </div></a>
                             <div class="description-bottom">
                                 <h6></h6>
                                 
@@ -368,23 +397,23 @@
                                 </div>
                                 <div class="tab-pane fade" id="tab2">
                                     
-                                                <h4>Hotels will be blocked off under Nathan-Clifton wedding at <a class="btn" target="_blank" href="http://www.hotelicon.com/">Hotel ICON</a>. Hotel ICON is adjacent to Market Square in downtown Houston and close to many popular <a class="btn" target="_blank" href="http://www.friedokra.org/charity-bar.html">bars</a> and <a href="http://batangahouston.com/" target="_blank" class="btn">restaurants</a>.</h4>
-                                            
+                                    <h4>Hotels will be blocked off under Nathan-Clifton wedding at <a class="btn" target="_blank" href="http://www.hotelicon.com/">Hotel ICON</a>. Hotel ICON is adjacent to Market Square in downtown Houston and close to many popular <a class="btn" target="_blank" href="http://www.friedokra.org/charity-bar.html">bars</a> and <a href="http://batangahouston.com/" target="_blank" class="btn">restaurants</a>.</h4>
+                                    
                                 </div>
                                 <div class="tab-pane fade" id="tab3">
                                     
-                                                <h4>Shuttles will be leaving from Hotel ICON at 5:15 and 5:30 to the church. There will be shuttle services from the church to the reception and back to Hotel ICON until midnight. Heights Presbyterian has free parking available behind the church. There will be free valet service at the reception venue at the Yoakum Boulevard entrance.</h4>
-                                            
+                                    <h4>Shuttles will be leaving from Hotel ICON at 5:15 and 5:30 to the church. There will be shuttle services from the church to the reception and back to Hotel ICON until midnight. Heights Presbyterian has free parking available behind the church. There will be free valet service at the reception venue at the Yoakum Boulevard entrance.</h4>
+                                    
                                 </div>
                                 <div class="tab-pane fade" id="tab4">
-                                   
-                                                <h4>Coming soon.</h4>
-                                            
+                                    
+                                    <h4>Coming soon.</h4>
+                                    
                                 </div>
                                 <div class="tab-pane fade" id="tab5">
                                     
-                                                <h4>If you’re <a class="btn" target="_blank" href="https://www.google.com/flights/#search;t=HOU,IAH;d=2014-06-13;r=2014-06-15;mc=m">flying</a> domestic, Houston Hobby (HOU) is a great option that’s closer to the city. For international flights or more flexibility, Bush (IAH) is Houston’s major hub.</h4>
-                                           
+                                    <h4>If you’re <a class="btn" target="_blank" href="https://www.google.com/flights/#search;t=HOU,IAH;d=2014-06-13;r=2014-06-15;mc=m">flying</a> domestic, Houston Hobby (HOU) is a great option that’s closer to the city. For international flights or more flexibility, Bush (IAH) is Houston’s major hub.</h4>
+                                    
                                 </div>
                             </div>
                         </div>

@@ -24,21 +24,6 @@
         <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
         
-        <style>
-            
-            /* Demo styles */
-            html,body{background:#222;margin:0;}
-            body{border-top:4px solid #000;}
-            .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:620px;margin:20px auto;}
-            h1{font-size:12px;font-weight:normal;color:#ddd;margin:0;}
-            p{margin:0 0 20px}
-            a {color:#22BCB9;text-decoration:none;}
-            .cred{margin-top:20px;font-size:11px;}
-            
-            /* This rule is read by Galleria to define the gallery height: */
-            #galleria{height:320px;}
-            
-        </style>
         
         <!-- load jQuery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
@@ -236,42 +221,32 @@
                 </div>
             </div>
         </div>
-        
-        <div class="content">
-            <h1>Galleria Flickr Plugin Demo</h1>
-            <p>Demonstrating a basic gallery example with a Flickr search.</p>
-            
-            <!-- Adding gallery images. This is just a container for the dynamic flickr images -->
-            
-            <div id="galleria"></div>
-            
-            <p class="cred">Made by <a href="http://galleria.aino.se">Galleria</a>.</p>
-            <a href="#" id="close">cloase</a>
-        </div>
+        <div id="galleria"></div>
         <script>
             
             // Load the classic theme
-            Galleria.loadTheme('../../themes/classic/galleria.classic.min.js');
+            Galleria.loadTheme('themes/classic/galleria.classic.js');
             
             // Initialize Galleria
             Galleria.run('#galleria', {
                 
                 // search flickr for "galleria"
-                flickr: 'search:galleria',
-                
+                flickr: 'set:72157640401096255',
                 flickrOptions: {
-                    // sort by interestingness
-                    sort: 'interestingness-desc'
+                    sort: 'date-posted-asc'
                 }
             });
         </script>
         
         <!-- content-30 -->
         <section id="wedding" class="content-30">
+            
             <div class="container">
+                
                 <div class="row">
                     <div class="span12">
                         <h1>the wedding</h1>
+                        
                     </div>
                 </div>
                 <div class="row features">
@@ -387,13 +362,8 @@
                             
                             <div class="tab-content">
                                 <div class="tab-pane fade in active" id="tab1">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="span8">
+                                   
                                                 <h4>The ceremony will begin at <a class="btn" target="_blank" href="https://www.google.com/calendar/event?action=TEMPLATE&tmeid=OGR0Y3RkNmRwZmVqNWxxYmFlaWg5NmJic2sgd2NsaWZ0b24xQG0&tmsrc=wclifton1%40gmail.com">6 PM</a> at Heights Presbyterian Church. Cocktail hour and reception <a class="btn" target="_blank" href="https://www.google.com/calendar/event?action=TEMPLATE&tmeid=MTkyNXMydXRqZWQ4bWJyMm52YmpmNTNyYzAgd2NsaWZ0b24xQG0&tmsrc=wclifton1%40gmail.com">to follow</a> at La Colombe D’or.</h4>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="tab-pane fade" id="tab2">
                                     
@@ -407,7 +377,8 @@
                                 </div>
                                 <div class="tab-pane fade" id="tab4">
                                     
-                                    <h4>Coming soon.</h4>
+                                    <h4><a href="http://www.lanesonaustin.com" target="_blank">Lane's</a>: Tableware and Gifts in Waco</h4>
+                                    <h4><a href="http://www.myregistry.com/public/willandjojo" target="_blank">MyRegistry.com</a></h4>
                                     
                                 </div>
                                 <div class="tab-pane fade" id="tab5">

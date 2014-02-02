@@ -38,7 +38,7 @@ Galleria.Flickr = function( api_key ) {
     this.api_key = api_key || '2a2ce06c15780ebeb0b706650fc890b2';
 
     this.options = {
-        max: 30,                       // photos to return
+        max: 60,                       // photos to return
         imageSize: 'medium',           // photo size ( thumb,small,medium,big,original )
         thumbSize: 'thumb',            // thumbnail size ( thumb,small,medium,big,original )
         sort: 'interestingness-desc',  // sort option ( date-posted-asc, date-posted-desc, date-taken-asc, date-taken-desc, interestingness-desc, interestingness-asc, relevance )

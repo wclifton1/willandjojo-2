@@ -452,8 +452,8 @@ button:active {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     padding: 25px 0;
     border-radius: 0;
     float: none;
@@ -530,19 +530,35 @@ button:active {
   .navbar .nav-collapse .navbar-search:focus {
     outline: 0 none;
   }
-  body > *,
+  .has-header-dockbar {
+    top: 66px !important;
+  }
+  body > header,
+  body > section,
+  body > div,
+  body > footer {
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: left 0.333s;
+    -moz-transition: left 0.333s;
+    -o-transition: left 0.333s;
+    transition: left 0.333s;
+    left: 0;
+  }
   .navbar .nav-collapse {
     -webkit-backface-visibility: hidden;
-    -webkit-transition: left 0.4s;
-    -moz-transition: left 0.4s;
-    -o-transition: left 0.4s;
-    transition: left 0.4s;
+    -webkit-transition: right 0.333s;
+    -moz-transition: right 0.333s;
+    -o-transition: right 0.333s;
+    transition: right 0.333s;
   }
-  .nav-visible body > * {
-    left: -72%;
+  .nav-visible body > header,
+  .nav-visible body > section,
+  .nav-visible body > div,
+  .nav-visible body > footer {
+    left: -230px;
   }
   .nav-visible .navbar .nav-collapse {
-    left: 28%!important;
+    right: 0!important;
     visibility: visible;
   }
 }
@@ -728,7 +744,7 @@ section * {
   color: #bdc3c7;
 }
 .header-10 .navbar .btn-navbar {
-  margin: 27px 0 17px;
+  margin: 36px 0 17px;
   padding: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -754,8 +770,8 @@ section * {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -823,6 +839,13 @@ section * {
   .header-10 .navbar .nav-collapse .navbar-form,
   .header-10 .navbar .nav-collapse .navbar-search {
     padding: 10px 35px;
+  }
+  .header-10 .navbar .btn-navbar:before {
+    content: '';
+    display: block;
+    background-image: url("../../../common-files/icons/menu-icon.png");
+    width: 17px;
+    height: 12px;
   }
 }
 .header-10-sub {
@@ -1517,6 +1540,10 @@ section * {
 /**
  * Price 2 stylesheet  
  * */
+.price-2 {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
 .price-2 .plans {
   display: table;
   -webkit-box-sizing: border-box;
@@ -1934,8 +1961,13 @@ body > section.price-2 {
   opacity: 0;
   filter: alpha(opacity=0);
 }
+.header-10 .navbar .nav > li {
+  margin-left: 60px;
+}
 .header-10 .navbar .nav > li > a {
-  font-weight: 500;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 .loaded .header-10 .navbar {
   -webkit-backface-visibility: hidden;

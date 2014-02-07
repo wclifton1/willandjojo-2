@@ -452,8 +452,8 @@ button:active {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     padding: 25px 0;
     border-radius: 0;
     float: none;
@@ -530,19 +530,35 @@ button:active {
   .navbar .nav-collapse .navbar-search:focus {
     outline: 0 none;
   }
-  body > *,
+  .has-header-dockbar {
+    top: 66px !important;
+  }
+  body > header,
+  body > section,
+  body > div,
+  body > footer {
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: left 0.333s;
+    -moz-transition: left 0.333s;
+    -o-transition: left 0.333s;
+    transition: left 0.333s;
+    left: 0;
+  }
   .navbar .nav-collapse {
     -webkit-backface-visibility: hidden;
-    -webkit-transition: left 0.4s;
-    -moz-transition: left 0.4s;
-    -o-transition: left 0.4s;
-    transition: left 0.4s;
+    -webkit-transition: right 0.333s;
+    -moz-transition: right 0.333s;
+    -o-transition: right 0.333s;
+    transition: right 0.333s;
   }
-  .nav-visible body > * {
-    left: -72%;
+  .nav-visible body > header,
+  .nav-visible body > section,
+  .nav-visible body > div,
+  .nav-visible body > footer {
+    left: -230px;
   }
   .nav-visible .navbar .nav-collapse {
-    left: 28%!important;
+    right: 0!important;
     visibility: visible;
   }
 }
@@ -743,10 +759,11 @@ section * {
 }
 .header-16 .navbar .btn-navbar:before {
   display: block;
-  margin-bottom: 20px;
-  font-size: 16px;
-  font-weight: normal;
-  color: #ffffff;
+  margin: 0 auto 20px;
+  content: '';
+  background-image: url("../../../common-files/icons/menu-icon.png");
+  width: 17px;
+  height: 12px;
 }
 .header-16 .navbar .btn-navbar:after {
   content: "\e00b";
@@ -1217,6 +1234,7 @@ section * {
 .header-16-sub .pt-first .pt-control-prev {
   opacity: 0.4;
   filter: alpha(opacity=40);
+  pointer-events: none;
 }
 .header-16-sub .pt-first .pt-control-prev:before {
   background: none;
@@ -1225,6 +1243,7 @@ section * {
 .header-16-sub .pt-last .pt-control-next {
   opacity: 0.4;
   filter: alpha(opacity=40);
+  pointer-events: none;
 }
 .header-16-sub .pt-last .pt-control-next:after {
   background: none;
@@ -1264,6 +1283,8 @@ section * {
  * Content 7 stylesheet  
  * */
 .content-7 {
+  padding-top: 125px;
+  padding-bottom: 130px;
   position: relative;
   text-align: center;
 }
@@ -1399,6 +1420,8 @@ section * {
  * Content 15 stylesheet  
  * */
 .content-15 {
+  padding-top: 125px;
+  padding-bottom: 130px;
   position: relative;
 }
 .content-15 h3 {
@@ -1485,6 +1508,8 @@ section * {
  * Content 18 stylesheet  
  * */
 .content-18 {
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
 }
 .content-18 .carousel {
@@ -1552,6 +1577,7 @@ section * {
   z-index: auto;
   background: none;
   border: 3px solid #ebedee;
+  pointer-events: none;
 }
 .content-18 .carousel .controls > .carousel-control.left {
   left: 0;
@@ -1564,10 +1590,10 @@ section * {
 }
 .content-18 .carousel .item {
   -webkit-backface-visibility: hidden;
-  -webkit-transition: .8s ease-in-out top, .6s ease-in-out opacity;
-  -moz-transition: .8s ease-in-out top, .6s ease-in-out opacity;
-  -o-transition: .8s ease-in-out top, .6s ease-in-out opacity;
-  transition: .8s ease-in-out top, .6s ease-in-out opacity;
+  -webkit-transition: .8s ease-in-out opacity, .8s ease-in-out opacity;
+  -moz-transition: .8s ease-in-out opacity, .8s ease-in-out opacity;
+  -o-transition: .8s ease-in-out opacity, .8s ease-in-out opacity;
+  transition: .8s ease-in-out opacity, .8s ease-in-out opacity;
   display: block;
   position: absolute;
   top: 0;
@@ -1643,6 +1669,10 @@ section * {
 /**
  * Price 5 stylesheet  
  * */
+.price-5 {
+  padding-top: 110px;
+  padding-bottom: 90px;
+}
 .price-5 .plans {
   display: table;
   -webkit-box-sizing: border-box;
@@ -1898,7 +1928,7 @@ body > section {
 .price-5 .plans .description-more big {
   color: #e74c3c;
 }
-.price-5 .plans .description-more [class*="fui-"] {
+.price-5 .plans .description-more[class*="fui-"] {
   color: #e74c3c;
 }
 .price-5 .plans .plan:hover {
@@ -1952,9 +1982,21 @@ body > section {
 }
 .content-15 {
   padding-bottom: 70px;
+  padding-top: 80px;
+}
+@media (max-width: 480px) {
+  .content-15 {
+    padding-top: 60px;
+  }
 }
 .content-7 {
+  padding-bottom: 80px;
   padding-top: 0;
+}
+@media (max-width: 480px) {
+  .content-7 {
+    padding-bottom: 0;
+  }
 }
 .content-7 img {
   opacity: 0;
@@ -2053,5 +2095,7 @@ body > section {
 }
 .price-5 {
   margin-top: 45px;
+  padding-top: 0;
+  padding-bottom: 0;
   color: #95a5a6;
 }

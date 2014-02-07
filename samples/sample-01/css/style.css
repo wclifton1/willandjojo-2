@@ -452,8 +452,8 @@ button:active {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     padding: 25px 0;
     border-radius: 0;
     float: none;
@@ -530,19 +530,35 @@ button:active {
   .navbar .nav-collapse .navbar-search:focus {
     outline: 0 none;
   }
-  body > *,
+  .has-header-dockbar {
+    top: 66px !important;
+  }
+  body > header,
+  body > section,
+  body > div,
+  body > footer {
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: left 0.333s;
+    -moz-transition: left 0.333s;
+    -o-transition: left 0.333s;
+    transition: left 0.333s;
+    left: 0;
+  }
   .navbar .nav-collapse {
     -webkit-backface-visibility: hidden;
-    -webkit-transition: left 0.4s;
-    -moz-transition: left 0.4s;
-    -o-transition: left 0.4s;
-    transition: left 0.4s;
+    -webkit-transition: right 0.333s;
+    -moz-transition: right 0.333s;
+    -o-transition: right 0.333s;
+    transition: right 0.333s;
   }
-  .nav-visible body > * {
-    left: -72%;
+  .nav-visible body > header,
+  .nav-visible body > section,
+  .nav-visible body > div,
+  .nav-visible body > footer {
+    left: -230px;
   }
   .nav-visible .navbar .nav-collapse {
-    left: 28%!important;
+    right: 0!important;
     visibility: visible;
   }
 }
@@ -745,8 +761,8 @@ section * {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -814,6 +830,14 @@ section * {
   .header-1 .navbar .nav-collapse .navbar-form,
   .header-1 .navbar .nav-collapse .navbar-search {
     padding: 10px 35px;
+  }
+  .header-1 .navbar .btn-navbar {
+    background-image: url("../../../common-files/icons/menu-icon.png");
+    width: 17px;
+    height: 12px;
+  }
+  .header-1 .navbar .btn-navbar:before {
+    content: '';
   }
 }
 .header-1-sub {
@@ -983,6 +1007,8 @@ section * {
  * Content 4 stylesheet  
  * */
 .content-4 {
+  padding-top: 130px;
+  padding-bottom: 120px;
   position: relative;
 }
 .content-4 h3 {
@@ -1084,6 +1110,8 @@ section * {
  * Footer 6 stylesheet  
  * */
 .footer-6 {
+  padding-top: 110px;
+  padding-bottom: 110px;
   color: #7f8c8d;
 }
 .footer-6 a {
@@ -1239,6 +1267,7 @@ section * {
 }
 .footer-6 .social-btns > * > * {
   display: block;
+  top: 0;
   position: relative;
   -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s top;

@@ -453,8 +453,8 @@ button:active {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     padding: 25px 0;
     border-radius: 0;
     float: none;
@@ -531,19 +531,35 @@ button:active {
   .navbar .nav-collapse .navbar-search:focus {
     outline: 0 none;
   }
-  body > *,
+  .has-header-dockbar {
+    top: 66px !important;
+  }
+  body > header,
+  body > section,
+  body > div,
+  body > footer {
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: left 0.333s;
+    -moz-transition: left 0.333s;
+    -o-transition: left 0.333s;
+    transition: left 0.333s;
+    left: 0;
+  }
   .navbar .nav-collapse {
     -webkit-backface-visibility: hidden;
-    -webkit-transition: left 0.4s;
-    -moz-transition: left 0.4s;
-    -o-transition: left 0.4s;
-    transition: left 0.4s;
+    -webkit-transition: right 0.333s;
+    -moz-transition: right 0.333s;
+    -o-transition: right 0.333s;
+    transition: right 0.333s;
   }
-  .nav-visible body > * {
-    left: -72%;
+  .nav-visible body > header,
+  .nav-visible body > section,
+  .nav-visible body > div,
+  .nav-visible body > footer {
+    left: -230px;
   }
   .nav-visible .navbar .nav-collapse {
-    left: 28%!important;
+    right: 0!important;
     visibility: visible;
   }
 }
@@ -703,11 +719,6 @@ section * {
 }
 .header-22 .navbar .nav > li {
   margin-left: 40px;
-  /*
-            &.active > a {
-                         .a-color(mix(@silver, black, 80%), mix(@silver, black, 80%));
-                       }*/
-
 }
 .header-22 .navbar .nav > li:first-child {
   margin-left: 0;
@@ -749,8 +760,8 @@ section * {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -818,6 +829,13 @@ section * {
   .header-22 .navbar .nav-collapse .navbar-form,
   .header-22 .navbar .nav-collapse .navbar-search {
     padding: 10px 35px;
+  }
+  .header-22 .navbar .btn-navbar:before {
+    content: '';
+    display: block;
+    background-image: url("../../../common-files/icons/menu-icon-dark.png");
+    width: 17px;
+    height: 12px;
   }
 }
 .header-22-sub {
@@ -921,6 +939,8 @@ section * {
  * Content 2 stylesheet  
  * */
 .content-2 {
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
 }
 .content-2 h3 {
@@ -988,6 +1008,8 @@ section * {
  * Content 7 stylesheet  
  * */
 .content-7 {
+  padding-top: 125px;
+  padding-bottom: 130px;
   position: relative;
   text-align: center;
 }
@@ -1153,10 +1175,20 @@ section * {
     margin: 30px 0 0;
   }
 }
+@media (max-width: 614px) {
+  .content-11 > .container > span {
+    display: block;
+  }
+  .content-11 .btn {
+    margin: 30px 0 0;
+  }
+}
 /**
  * Content 15 stylesheet  
  * */
 .content-15 {
+  padding-top: 125px;
+  padding-bottom: 130px;
   position: relative;
 }
 .content-15 h3 {

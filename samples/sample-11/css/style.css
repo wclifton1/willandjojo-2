@@ -452,8 +452,8 @@ button:active {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     padding: 25px 0;
     border-radius: 0;
     float: none;
@@ -530,19 +530,35 @@ button:active {
   .navbar .nav-collapse .navbar-search:focus {
     outline: 0 none;
   }
-  body > *,
+  .has-header-dockbar {
+    top: 66px !important;
+  }
+  body > header,
+  body > section,
+  body > div,
+  body > footer {
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: left 0.333s;
+    -moz-transition: left 0.333s;
+    -o-transition: left 0.333s;
+    transition: left 0.333s;
+    left: 0;
+  }
   .navbar .nav-collapse {
     -webkit-backface-visibility: hidden;
-    -webkit-transition: left 0.4s;
-    -moz-transition: left 0.4s;
-    -o-transition: left 0.4s;
-    transition: left 0.4s;
+    -webkit-transition: right 0.333s;
+    -moz-transition: right 0.333s;
+    -o-transition: right 0.333s;
+    transition: right 0.333s;
   }
-  .nav-visible body > * {
-    left: -72%;
+  .nav-visible body > header,
+  .nav-visible body > section,
+  .nav-visible body > div,
+  .nav-visible body > footer {
+    left: -230px;
   }
   .nav-visible .navbar .nav-collapse {
-    left: 28%!important;
+    right: 0!important;
     visibility: visible;
   }
 }
@@ -798,8 +814,8 @@ section * {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -867,6 +883,13 @@ section * {
   .header-6 .navbar .nav-collapse .navbar-form,
   .header-6 .navbar .nav-collapse .navbar-search {
     padding: 10px 35px;
+  }
+  .header-6 .navbar .btn-navbar:before {
+    content: '';
+    display: block;
+    background-image: url("../../../common-files/icons/menu-icon.png");
+    width: 17px;
+    height: 12px;
   }
 }
 .loaded .header-6 .navbar {
@@ -990,6 +1013,7 @@ section * {
   position: relative;
   overflow: hidden;
   width: 220px;
+  height: 150px;
   margin: 50px auto 170px;
   border: 4px solid #fff;
 }
@@ -1026,7 +1050,7 @@ section * {
 .header-6-sub .signup-form form input,
 .header-6-sub .signup-form form button {
   float: left;
-  width: 21.8%;
+  width: 23.8%;
   height: 41px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1036,19 +1060,19 @@ section * {
 @media (min-width: 1200px) {
   .header-6-sub .signup-form form input,
   .header-6-sub .signup-form form button {
-    width: 22%;
+    width: 23.8%;
   }
 }
 @media (max-width: 979px) and (min-width: 768px) {
   .header-6-sub .signup-form form input,
   .header-6-sub .signup-form form button {
-    width: 21.4%;
+    width: 23.8%;
   }
 }
 @media (max-width: 767px) {
   .header-6-sub .signup-form form input,
   .header-6-sub .signup-form form button {
-    width: 20%;
+    width: 23.8%;
   }
 }
 @media (max-width: 480px) {
@@ -1064,11 +1088,25 @@ section * {
 .header-6-sub .signup-form form button:first-child {
   margin: 0;
 }
+.header-6-sub .signup-form form button {
+  width: 22%;
+  margin-left: 2%;
+}
+@media (max-width: 480px) {
+  .header-6-sub .signup-form form button {
+    width: 100%;
+    margin: 10px 0 0;
+    display: block;
+    float: none;
+  }
+}
 /* contents */
 /**
  * Content 3 stylesheet  
  * */
 .content-3 {
+  padding-top: 130px;
+  padding-bottom: 130px;
   position: relative;
 }
 .content-3 h3 {

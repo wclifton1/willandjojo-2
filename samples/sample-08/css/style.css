@@ -452,8 +452,8 @@ button:active {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     padding: 25px 0;
     border-radius: 0;
     float: none;
@@ -530,19 +530,35 @@ button:active {
   .navbar .nav-collapse .navbar-search:focus {
     outline: 0 none;
   }
-  body > *,
+  .has-header-dockbar {
+    top: 66px !important;
+  }
+  body > header,
+  body > section,
+  body > div,
+  body > footer {
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: left 0.333s;
+    -moz-transition: left 0.333s;
+    -o-transition: left 0.333s;
+    transition: left 0.333s;
+    left: 0;
+  }
   .navbar .nav-collapse {
     -webkit-backface-visibility: hidden;
-    -webkit-transition: left 0.4s;
-    -moz-transition: left 0.4s;
-    -o-transition: left 0.4s;
-    transition: left 0.4s;
+    -webkit-transition: right 0.333s;
+    -moz-transition: right 0.333s;
+    -o-transition: right 0.333s;
+    transition: right 0.333s;
   }
-  .nav-visible body > * {
-    left: -72%;
+  .nav-visible body > header,
+  .nav-visible body > section,
+  .nav-visible body > div,
+  .nav-visible body > footer {
+    left: -230px;
   }
   .nav-visible .navbar .nav-collapse {
-    left: 28%!important;
+    right: 0!important;
     visibility: visible;
   }
 }
@@ -788,8 +804,8 @@ section * {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 100%;
-    width: 72%;
+    right: -230px;
+    width: 230px;
     height: auto!important;
     padding: 25px 0;
     border-radius: 0;
@@ -857,6 +873,13 @@ section * {
   .header-21 .navbar .nav-collapse .navbar-form,
   .header-21 .navbar .nav-collapse .navbar-search {
     padding: 10px 35px;
+  }
+  .header-21 .navbar .btn-navbar:before {
+    content: '';
+    display: block;
+    background-image: url("../../../common-files/icons/menu-icon-header-21.png");
+    width: 17px;
+    height: 12px;
   }
 }
 .header-21-sub {
@@ -980,8 +1003,8 @@ section * {
  * */
 .content-6 {
   position: relative;
-  padding-top: 200px;
-  padding-bottom: 80px;
+  padding-top: 130px;
+  padding-bottom: 120px;
 }
 @media (max-width: 768px) {
   .content-6 {
@@ -1148,8 +1171,8 @@ section * {
 .content-17 {
   position: relative;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 @media (max-width: 768px) {
   .content-17 {
@@ -1310,8 +1333,8 @@ section * {
   min-height: 300px;
 }
 .footer-9 {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .footer-9 h6 {
   font-size: 18px;
@@ -1367,4 +1390,34 @@ footer {
 .blog-2 .background .span4 > div {
   background-image: none;
   width: 1130px;
+}
+.content-6 {
+  padding-top: 200px;
+  padding-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .content-6 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.content-17 {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+@media (max-width: 768px) {
+  .content-17 {
+    padding-top: auto;
+    padding-bottom: auto;
+  }
+}
+.footer-9 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+@media (max-width: 768px) {
+  .footer-9 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
